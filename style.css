@@ -1,0 +1,224 @@
+/* 
+1: body
+2: header
+3: header h1
+4: #main
+5: #main .boxes
+6: #main .boxes .tower
+7: #main .boxes .piece
+8: #main .boxes #largePiece
+9: #main .boxes #bigPiece
+10: #main .boxes #mediumPiece
+11: #main .boxes #smallPiece
+12: #main .boxes .bar
+13: #main .boxes .phases
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 95vw;
+    height: 95vh;
+    font-family: 'Lobster Two', cursive;
+    font-size: 20px;
+    margin: 0 auto;
+    border: 50px solid #425875;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #656C75;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    color: #D3E2F5;
+    margin-bottom: 100px;
+    font-size: 80px;
+}
+#winner {
+    height: 100px;
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+    color:  #D3E2F5;
+}
+
+#main {
+    width: 80%;
+    height: 80vh;
+    max-height: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#main .boxes {
+    width: 50vw;
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+
+#main .boxes .tower {
+    width: 300px;
+    height: 180px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+}
+
+#main .boxes .piece {
+    border: 2px solid #425875;
+    border-radius: 10px;
+    pointer-events: none;
+    color: white;
+    width: 30%;
+    height: 15%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+#main .boxes #largePiece {
+    width: 200px;
+    height: 20px;
+    background: #8AB9F7;
+}
+
+#main .boxes #bigPiece {
+    width: 175px;
+    height: 20px;
+    background: #D3E2F5;
+    
+}
+
+#main .boxes #mediumPiece {
+    width: 150px;
+    height: 20px;
+    background: #8AB9F7;
+    
+}
+
+#main .boxes #smallPiece {
+    width: 125px;
+    height: 20px;
+    background: #D3E2F5;
+    
+}
+
+#main .boxes .bar {
+    pointer-events: none;
+    width: 10px;
+    height: 140px;
+    margin-bottom: 30px;
+    background: #425875;
+    position: absolute;
+    z-index: 1;
+}
+
+#main .boxes .phases {
+    width: 30%;
+    height: 15%;
+    color: #D3E2F5;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 2;
+}
+
+@media screen and (max-width:780px) {
+    /* 1: body
+2: header
+3: header h1
+4: #main
+5: #main .boxes
+6: #main .boxes .tower
+7: #main .boxes .piece
+8: #main .boxes #largePiece
+9: #main .boxes #bigPiece
+10: #main .boxes #mediumPiece
+11: #main .boxes #smallPiece
+12: #main .boxes .bar
+13: #main .boxes .phases */
+    body {
+        border: 30px solid #425875;
+    }
+    #main .boxes {
+        width: 30vw;
+    }
+    #main .boxes .tower{
+        width: 29vw;
+    }
+    #main .boxes #largePiece{
+        width: 150px;
+    }
+    #main .boxes #bigPiece{
+        width: 125px;
+    }
+    #main .boxes #mediumPiece{
+        width: 100px;
+    }
+    #main .boxes #smallPiece{
+        width: 75px;
+    }
+    #main .boxes .bar{
+        width: 8px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    /* 1: body
+2: header
+3: header h1
+4: #main
+5: #main .boxes
+6: #main .boxes .tower
+7: #main .boxes .piece
+8: #main .boxes #largePiece
+9: #main .boxes #bigPiece
+10: #main .boxes #mediumPiece
+11: #main .boxes #smallPiece
+12: #main .boxes .bar
+13: #main .boxes .phases */
+    body {
+        border: 15px solid #425875;
+    }
+    #main .boxes .tower{
+        width: 29vw;
+    }
+    #main .boxes #largePiece{
+        width: 100px;
+    }
+    #main .boxes #bigPiece{
+        width: 75px;
+    }
+    #main .boxes #mediumPiece{
+        width: 50px;
+    }
+    #main .boxes #smallPiece{
+        width: 25px;
+    }
+    #main .boxes .bar{
+        width: 6px;
+    }
+}
